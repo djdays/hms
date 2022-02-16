@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Carewell HMS | DJ</title>
+  <style media="screen">
+    body{
+      background-color: #E9ECEF;
+      background-image: url('/static/images/bgp1.png') !important;
+    }
+    .jumbotron {
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+
+    .jumbotron h1 {
+      text-align: center;
+    }
+
+    .alert {
+      margin: 0px;
+    }
+    .jumbotron{
+      background-image: url('/static/images/cb1.png');  
+      background-size: cover;    
+      height: 800px;
+    }
+  
+
+  </style>
+  <title>DJ</title>
+</head>
+
+<body>
+  {% include "hospital/navbar.html" %}
+  <br><br>
+  <center>
+    <!-- <h3 class='alert alert-success' style="margin-bottom:0px;">About Us !</h3> -->
+  </center>
+  <div class="jumbotron jumbotron-fluid" style="margin-bottom: 0px;margin-top: 0px;">
+    <h1 class="display-4" style="color: #274684;">About us</h1>
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <div class="col-md-6">
+          <p class="lead" style="text-align: justify;">
+            A service dedicated to Hospital Admin, Doctor and Patient.
+            Carewell HMS has a robust presence across the healthcare ecosystem. 
+            From routine wellness & preventive health care to innovative life-saving treatments and 
+            diagnostic services</p>
+        </div>
+      </div>
+    </div>
+    <hr class="my-4">
+    <p>Explore our Website for more information</p>
+    <p class="lead">
+      <a class="btn btn-primary btn-lg bg-info" href="/" role="button" style="border:0">HOME</a>
+    </p>
+  </div>
+  {% include "hospital/footer.html" %}
+</body>
+<!--
+developed By : J Shridhanajeyan
+instagram.com/iamDJDays
+youtube : youtube.com/DJDays
+-->
+
+</html>

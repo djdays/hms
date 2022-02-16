@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      max-width: 300px;
+      margin: auto;
+      text-align: center;
+      font-family: arial;
+    }
+
+    .title {
+      color: grey;
+      font-size: 18px;
+    }
+
+    button {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 8px;
+      color: white;
+      background-color: #000;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+      font-size: 18px;
+    }
+
+    button:hover{
+      opacity: 0.9;
+    }
+
+    a[href='/doctorclick']:hover {
+      color: #28a746;
+    }
+    a[href='/patientclick']:hover {
+      color: #ffc107;
+    }
+    a[href='/adminclick']:hover {
+      color: #007bff;
+    }
+
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      padding: 10px;
+    }
+
+    a:link {
+      text-decoration: none;
+    }
+
+    a {
+      color: white;
+    }
+    .hompage_btn{
+      color: ;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="grid-container">
+      <div class="card text-white bg-success shadow p-3 mb-5 rounded" style="max-width: 18rem;">
+        <div class="card-header"><b>Doctor</b></div>
+        <div class="card-body">
+          
+          <p class="card-text">Doctor Login to track treatment and to advice Patients </p>
+          <button type="button" class="bg-dark hompage_btn">  <a href="/doctorclick"> Click Here</a> </button>
+        </div>
+      </div>
+      <div class="card text-white bg-warning shadow p-3 mb-5 rounded" style="max-width: 18rem;">
+        <div class="card-header"><b>Patient</b></div>
+        <div class="card-body">
+          
+          <p class="card-text">Register if you visiting for the  first time visitor to hospital or login to continue</p>
+          <button type="button" class="bg-dark hompage_btn">  <a href="/patientclick"> Click Here</a> </button>
+        </div>
+      </div>
+      
+      <div class="card text-white bg-primary shadow p-3 mb-5 rounded" style="max-width: 18rem;">
+        <div class="card-header"><b>Admin</b></div>
+        <div class="card-body">
+          
+          <p class="card-text">Admin portal  to manage the appointment and facilate Doctors and patients</p>
+          <button type="button" class="bg-dark hompage_btn">  <a href="/adminclick"> Click Here</a> </button>
+        </div>
+      </div>
+  </div>
+  
+  <!--
+  developed By : J Shridhanajeyan
+  instagram.com/iamDJDays
+  youtube : youtube.com/DJDays
+  -->
+
+</body>
+
+</html>

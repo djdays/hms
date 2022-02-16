@@ -1,0 +1,51 @@
+{% extends 'hospital/homebase.html' %}
+<!--
+developed By : J Shridhanajeyan
+instagram.com/iamDJDays
+youtube : youtube.com/DJDays
+-->
+
+{% block content %}
+<style>
+    .jumbotron{
+    background-image: url('/static/images/doctorclick.jpg');
+    background-size: cover;    
+    height: 800px;
+  }
+</style>
+
+<br>
+<br>
+
+<div class="jumbotron jumbotron-fluid" style="margin-bottom:0px;">
+  <h1 class="display-4 text-center" style="color: #274684;">Hello, Doctor</h1>
+  <p class="lead">Carewell Hospital Management System Welcomes you.</p>
+  <hr class="my-4">
+  <p>You need to Login/SignUp to access HMS features </p>
+  <p class="lead">
+    <div class="row">
+      <div class="col-sm-4 offset-md-2">
+        <div class="card">
+          <div class="card-body text-center">
+            <!-- <h5 class="card-title">Special title treatment</h5> -->
+            <p class="card-text">If you are a New to our HMS Please click Apply button below to Register</p>
+             <a class="btn btn-primary btn-lg" href="/doctorsignup" role="button">Apply</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="card-body text-center">
+            <!-- <h5 class="card-title">Special title treatment</h5> -->
+            <p class="card-text">Existing users can Login button below to login with their credentials</p>
+            <a class="btn btn-primary btn-lg bg-success" href="/doctorlogin" role="button">Login</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <a class="btn btn-primary btn-lg" href="/doctorsignup" role="button">Apply</a>
+    <a class="btn btn-primary btn-lg bg-success" href="/doctorlogin" role="button">Login</a> -->
+  </p>
+</div>
+
+{% endblock content %}

@@ -1,0 +1,121 @@
+{% extends 'hospital/homebase.html' %}
+{% load static %}
+<!--
+written By : J Shridhanajeyan
+instagram.com/iamDJDays
+-->
+
+
+{% block content %}
+
+
+<head>
+  <style media="screen">
+    
+    /* .jumbotron {
+      margin-top: 0px;
+      margin-bottom: 0px;
+      background-image: url('{% static "images/bg.jpg" %}');
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 30%;
+    } */
+    .jumbotron {
+     
+      background-image: url('{% static "images/bg.jpg" %}');
+      background-size: cover;
+      background-repeat: no-repeat;
+      height:360px;
+    }
+
+    .jumbotron h5,
+    h3 {
+      text-align: center;
+    }
+
+    
+    .alert {
+      margin: 0px;
+    }
+
+    a[href='/patientclick']:hover {
+      color: #28a746; 
+    }
+
+
+    .glow {
+      font-size: 50px;
+      color: white;
+      text-align: center;
+      -webkit-animation: glow 1s ease-in-out infinite alternate;
+      -moz-animation: glow 1s ease-in-out infinite alternate;
+      animation: glow 1s ease-in-out infinite alternate;
+    }
+
+    @-webkit-keyframes glow {
+      from {
+        text-shadow: 0 0 10px #eeeeee, 0 0 20px #000000, 0 0 30px #000000, 0 0 40px #000000, 0 0 50px #9554b3, 0 0 60px #9554b3, 0 0 70px #9554b3;
+      }
+
+      to {
+        text-shadow: 0 0 20px #eeeeee, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+      }
+    }
+    .emergency-btn{
+      background: #008B8B;
+      border:0;
+    }
+    .emergency-btn:hover{
+      background: #17A2B8;      
+      text-decoration: none;
+    }
+    
+    .jumbotron {
+  color: white;
+  /* background-image: url("https://images.unsplash.com/photo-1438109491414-7198515b166b?q=80&fm=jpg&s=cbdabf7a79c087a0b060670a6d79726c"); */
+  background-image: url('{% static "images/homepage_jumboran.jpeg" %}');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+  </style>
+  <script>
+        $(".jumbotron").css({ height: $(window).height() - 80  + "px" });
+$(window).on("resize", function() {
+  $(".jumbotron").css({ height: $(window).height() + "px" });
+});
+  </script>
+</head>
+<br>
+<br>
+<!--
+<div class="jumbotron jumbotron-fluid">
+  <h1 class="display-6" style="text-align: center; color: #f00">Emergency!</h1>
+  <div style="text-align: center;"><p <a class="btn btn-primary btn-lg emergency-btn" href="/patientclick" role="button">Call our 24/7 helpline</a></div>
+  
+</div>
+-->
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4" style="color: darkcyan">Stay Safe, Stay Healthy</h1>
+    <p class="display-3 text-left" style="color:red">EMERGENCY?</p>
+    <button type="button" class="btn btn-lg btn-info">  <a class="text-white" href="/patientclick" style="text-decoration: none"> Call our 24/7 Support</a> </button>
+  </div>
+</div>
+
+
+
+<!-- <br><br><br><br> -->
+
+<!-- {% include "hospital/admin_doctor_patient_card.html" %} -->
+<!-- <br><br><br> -->
+<!--
+developed By : J Shridhanajeyan
+instagram.com/iamDJDays
+youtube : youtube.com/DJDays
+-->
+
+{% endblock content %}
